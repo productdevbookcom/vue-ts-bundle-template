@@ -23,7 +23,6 @@
         "types": [
             "vue",
             "vite/client",
-            "vite-plugin-pwa/client",
             "unplugin-vue-macros/macros-global"
         ],
         "paths": {

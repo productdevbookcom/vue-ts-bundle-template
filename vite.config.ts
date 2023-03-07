@@ -4,8 +4,6 @@ import Vue from '@vitejs/plugin-vue'
 import { defineConfig } from 'vite'
 // https://github.com/qmhc/vite-plugin-dts
 import dtsPlugin from 'vite-plugin-dts'
-// https://github.com/vbenjs/vite-plugin-vue-setup-extend
-import vueSetupExtend from 'vite-plugin-vue-setup-extend'
 
 // https://github.com/sxzz/unplugin-vue-macros
 import VueMacros from 'unplugin-vue-macros/vite'
@@ -17,8 +15,6 @@ const externals = [
 ]
 export default defineConfig({
   plugins: [
-    Vue(),
-    vueSetupExtend(),
     dtsPlugin(),
     VueMacros({
       plugins: {

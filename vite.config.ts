@@ -1,0 +1,40 @@
+import path, { resolve } from 'node:path'
+
+import vue from '@vitejs/plugin-vue'
+import { defineConfig } from 'vite'
+// https://github.com/qmhc/vite-plugin-dts
+import dtsPlugin from 'vite-plugin-dts'
+// https://github.com/vbenjs/vite-plugin-vue-setup-extend
+import vueSetupExtend from 'vite-plugin-vue-setup-extend'
+
+import * as pkg from './package.json'
+
+const externals = [
+  ...Object.keys(pkg.peerDependencies || {}),
+]
+export default defineConfig({
+  plugins: [
+    vue(),
+    vueSetupExtend(),
+    dtsPlugin(),
+  ],
+  resolve: {
+    alias: {
+      '@': resolve(__dirname, 'src'),
+    },
+  },
+  build: {
+    lib: {
+      entry: path.resolve(__dirname, 'src/index.ts'),
+      formats: ['es', 'umd'],
+      name: 'change-name',
+      fileName: format => `index.${format}.js`,
+    },
+    rollupOptions: {
+      external: externals,
+      output: {
+        format: 'esm',
+      },
+    },
+  },
+})

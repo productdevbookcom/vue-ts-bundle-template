@@ -1,11 +1,14 @@
 import path, { resolve } from 'node:path'
 
-import vue from '@vitejs/plugin-vue'
+import Vue from '@vitejs/plugin-vue'
 import { defineConfig } from 'vite'
 // https://github.com/qmhc/vite-plugin-dts
 import dtsPlugin from 'vite-plugin-dts'
 // https://github.com/vbenjs/vite-plugin-vue-setup-extend
 import vueSetupExtend from 'vite-plugin-vue-setup-extend'
+
+// https://github.com/sxzz/unplugin-vue-macros
+import VueMacros from 'unplugin-vue-macros/vite'
 
 import * as pkg from './package.json'
 
@@ -14,9 +17,17 @@ const externals = [
 ]
 export default defineConfig({
   plugins: [
-    vue(),
+    Vue(),
     vueSetupExtend(),
     dtsPlugin(),
+    VueMacros({
+      plugins: {
+        vue: Vue({
+          include: [/\.vue$/, /\.md$/],
+          reactivityTransform: true,
+        }),
+      },
+    }),
   ],
   resolve: {
     alias: {

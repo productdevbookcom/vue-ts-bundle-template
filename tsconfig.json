@@ -22,13 +22,21 @@
         "strictNullChecks": true,
         "types": [
             "vue",
-            "vite/client"
+            "vite/client",
+            "vite-plugin-pwa/client",
+            "unplugin-vue-macros/macros-global"
         ],
         "paths": {
             "@root/*": [
                 "./src/*"
             ]
         }
+    },
+    "vueCompilerOptions": {
+        "plugins": [
+            "@vue-macros/volar/define-model",
+            "@vue-macros/volar/define-slots"
+        ]
     },
     "include": [
         "vite.config.*",

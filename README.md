@@ -9,6 +9,8 @@ This is a template for creating a Typescript bundle. It is based on the [Typescr
 
 - [x] [Typescript](https://www.typescriptlang.org/)
 - [x] [Vite](https://vitejs.dev/)
+- [x] [Vue](https://vuejs.org/)
+- [x] [Vue Macros](https://github.com/sxzz/unplugin-vue-macros)
 - [x] [ESLint](https://eslint.org/) with [Antfu's ESLint Config](https://github.com/antfu/eslint-config)
 - [x] [Bumpp](https://github.com/antfu/bumpp) github changelog generator
 - [x] [Vitest](https://vitest.dev/)

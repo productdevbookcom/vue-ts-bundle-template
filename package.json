@@ -54,7 +54,7 @@
     "bumpp": "^9.1.0",
     "eslint": "^8.37.0",
     "jsdom": "^21.1.1",
-    "typescript": "^4.9.5",
+    "typescript": "^5.0.2",
     "unplugin-vue-macros": "^1.11.2",
     "vite": "^4.2.1",
     "vite-plugin-dts": "^2.1.0",

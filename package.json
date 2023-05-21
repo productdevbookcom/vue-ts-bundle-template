@@ -36,8 +36,8 @@
     "dev": "vite",
     "prepublishOnly": "pnpm run build",
     "release": "pnpm build && bumpp --commit --push --tag && pnpm publish",
-    "lint": "eslint --ext .ts,.tsx,.js,.jsx .",
-    "lint:fix": "eslint --ext .ts,.tsx,.js,.jsx . --fix",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
     "test": "vitest",
     "test:watch": "vitest --watch",
     "coverage": "vitest run --coverage"

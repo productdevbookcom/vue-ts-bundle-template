@@ -26,10 +26,12 @@ This is a template for creating a Typescript bundle. It is based on the [Typescr
 2. Clone the repository to your local machine.
 3. Run `pnpm install` to install the dependencies.
 4. Run `pnpm build` to build the bundle.
-5. Run `pnpm start` to start the bundle.
-6. Run `pnpm lint` to lint the code. (You can also run `pnpm lint:fix` to fix the linting errors.)
-7. Run `pnpm test` to run the tests. (You can also run `pnpm test:watch` to run the tests in watch mode.)
-8. Run `pnpm release` to bump the version. Terminal will ask you to select the version type. And then it will automatically commit and push the changes. GitHub Actions will automatically publish git tags. NPM local registry will automatically publish the package.
+5. Run `build:watch` to build the bundle in watch mode.
+6. Run `pnpm play` to playground dev mode.
+7. Run `pnpm start` to start the bundle.
+8. Run `pnpm lint` to lint the code. (You can also run `pnpm lint:fix` to fix the linting errors.)
+9. Run `pnpm test` to run the tests. (You can also run `pnpm test:watch` to run the tests in watch mode.)
+10. Run `pnpm release` to bump the version. Terminal will ask you to select the version type. And then it will automatically commit and push the changes. GitHub Actions will automatically publish git tags. NPM local registry will automatically publish the package.
 
 ## Configuration
 
@@ -37,6 +39,14 @@ This is a template for creating a Typescript bundle. It is based on the [Typescr
 
 [Setup Github App](https://github.com/apps/renovate) for Renovate.
 
+
+# Checklists
+
+- Update the `README.md` file.
+- Update the `LICENSE` file.
+- Update the `package.json` file. (name,version, description, author, repository, bugs, homepage, funding, keywords)
+- playground/src/App.vue - update package name `vue-bundle-template`
+- playground/package.json - in change the package name `vue-bundle-template` 
 
 ## Sponsors
 

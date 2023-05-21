@@ -1,17 +1,17 @@
 {
-  "name": "ts-bundle-template",
-  "version": "1.0.0",
-  "packageManager": "pnpm@8.0.0",
+  "name": "vue-bundle-template",
+  "version": "0.0.0",
+  "packageManager": "pnpm@8.3.0",
   "description": "add description",
   "author": "add author",
   "license": "MIT",
   "funding": "https://github.com/sponsors/productdevbook",
-  "homepage": "https://github.com/productdevbookcom/ts-bundle-template",
+  "homepage": "https://github.com/productdevbookcom/vue-bundle-template",
   "repository": {
     "type": "git",
-    "url": "https://github.com/productdevbookcom/ts-bundle-template.git"
+    "url": "https://github.com/productdevbookcom/vue-bundle-template.git"
   },
-  "bugs": "https://github.com/productdevbookcom/ts-bundle-template/issues",
+  "bugs": "https://github.com/productdevbookcom/vue-bundle-template/issues",
   "keywords": [
     "add keywords"
   ],
@@ -24,9 +24,7 @@
   "main": "./dist/index.es.js",
   "types": "./dist/index.d.ts",
   "files": [
-    "dist",
-    "LICENSE",
-    "README.md"
+    "dist"
   ],
   "engines": {
     "node": ">=16",
@@ -34,7 +32,9 @@
   },
   "scripts": {
     "build": "vite build --mode production",
+    "build:watch": "vite build --watch",
     "dev": "vite",
+    "play": "pnpm --filter playground dev",
     "prepublishOnly": "pnpm run build",
     "release": "pnpm build && bumpp --commit --push --tag && pnpm publish",
     "lint": "eslint .",
@@ -44,7 +44,7 @@
     "coverage": "vitest run --coverage"
   },
   "peerDependencies": {
-    "vue": "=>3.2.47"
+    "vue": "=>3.3.0"
   },
   "devDependencies": {
     "@antfu/eslint-config": "^0.39.0",

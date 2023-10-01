@@ -1,11 +1,11 @@
-import { describe, expect, test } from 'vitest'
+import { describe, expect } from 'vitest'
 import { mount } from '@vue/test-utils'
 import { Button } from '../src'
 
 const slotText = 'Test content'
 
 describe('button', () => {
-  test('alert render', () => {
+  it('alert render', () => {
     const wrapper = mount(Button, {
       slots: {
         default: slotText,
@@ -15,7 +15,7 @@ describe('button', () => {
     expect(wrapper.text()).toBe(slotText)
   })
 
-  test('loading', () => {
+  it('loading', () => {
     const wrapper = mount(Button, {
       props: {
         loading: true,
@@ -25,7 +25,7 @@ describe('button', () => {
     expect(wrapper.html()).toMatchSnapshot()
   })
 
-  test('disabled', () => {
+  it('disabled', () => {
     const wrapper = mount(Button, {
       props: {
         disabled: true,

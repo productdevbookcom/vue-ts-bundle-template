@@ -1,5 +1,6 @@
 {
   "name": "vue-bundle-template",
+  "type": "module",
   "version": "0.0.0",
   "packageManager": "pnpm@8.8.0",
   "description": "add description",

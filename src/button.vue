@@ -12,6 +12,7 @@ interface ButtonProps {
   onClick?: (e: MouseEvent) => void
 }
 
+// eslint-disable-next-line unused-imports/no-unused-vars
 const props = withDefaults(defineProps<ButtonProps>(), {
   type: 'default',
   size: 'middle',

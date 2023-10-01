@@ -21,7 +21,6 @@ export default defineConfig({
       plugins: {
         vue: Vue({
           include: [/\.vue$/, /\.md$/],
-          reactivityTransform: true,
         }),
       },
     }),
@@ -42,6 +41,12 @@ export default defineConfig({
       external: externals,
       output: {
         format: 'esm',
+        dir: './dist',
+        // Provide global variables to use in the UMD build
+        // for externalized deps
+        globals: {
+          vue: 'Vue',
+        },
       },
     },
   },

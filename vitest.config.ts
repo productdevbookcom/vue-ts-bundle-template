@@ -18,7 +18,7 @@ export default defineConfig({
     ],
     include: ['**/test/*.{js,tsx,ts}'],
     alias: {
-      '@root': './src',
+      '~/': './src',
     },
   },
 })

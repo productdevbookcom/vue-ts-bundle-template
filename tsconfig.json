@@ -1,45 +1,52 @@
 {
-  "$schema": "https://json.schemastore.org/tsconfig",
-  "display": "Default",
+  "references": [
+    {
+      "path": "./tsconfig.node.json"
+    }
+  ],
   "compilerOptions": {
+    "baseUrl": "src",
     "target": "esnext",
     "useDefineForClassFields": true,
     "module": "esnext",
     "moduleResolution": "node",
-    "isolatedModules": true,
     "strict": true,
     "jsx": "preserve",
     "sourceMap": true,
     "resolveJsonModule": true,
+    "isolatedModules": true,
     "esModuleInterop": true,
+    "outDir": "dist/types",
     "lib": [
       "esnext",
       "dom"
     ],
     "skipLibCheck": true,
-    "outDir": "dist",
-    "noUnusedLocals": true,
-    "strictNullChecks": true,
-    "types": [
-      "vue",
-      "vite/client",
-      "unplugin-vue-macros/macros-global"
-    ],
     "paths": {
-      "@root/*": [
-        "./src/*"
-      ]
-    }
+      "~/*": [
+        "*"
+      ],
+    },
+    "types": [
+      "vitest/globals",
+      "unplugin-vue-define-options/macros-global",
+      "unplugin-vue-macros/macros-global"
+    ]
   },
   "vueCompilerOptions": {
+    "target": 3,
     "plugins": [
-      "@vue-macros/volar/define-model",
-      "@vue-macros/volar/define-slots"
+      "@vue-macros/volar/define-options",
+      "@vue-macros/volar/define-slots",
     ]
   },
   "include": [
-    "vite.config.*",
-    "src/**/*",
-    "test/**/*"
+    "src/**/*.ts",
+    "src/**/*.d.ts",
+    "src/**/*.tsx",
+    "src/**/*.vue",
+    "auto-imports.d.ts",
+    "shims.d.ts",
+    "volar.d.ts"
   ]
 }

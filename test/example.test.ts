@@ -1,6 +1,6 @@
 import { describe, expect, test } from 'vitest'
 import { mount } from '@vue/test-utils'
-import { Button } from '@root/index'
+import { Button } from '../src'
 
 const slotText = 'Test content'
 

@@ -8,6 +8,6 @@
   },
   "include": [
     "vite.config.ts",
-    "volar.d.ts"
+    "volar.d.ts",
   ]
 }

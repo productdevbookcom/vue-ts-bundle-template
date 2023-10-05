@@ -1,31 +1,31 @@
 {
   "compilerOptions": {
     "target": "esnext",
+    "jsx": "preserve",
     "lib": [
       "esnext",
       "dom"
     ],
-    "jsx": "preserve",
     "useDefineForClassFields": true,
+    "baseUrl": "src",
     "module": "esnext",
     "moduleResolution": "node",
-    "baseUrl": "src",
     "paths": {
       "~/*": [
         "*"
       ]
     },
+    "resolveJsonModule": true,
     "types": [
       "vitest/globals",
       "unplugin-vue-define-options/macros-global",
       "unplugin-vue-macros/macros-global"
     ],
-    "resolveJsonModule": true,
-    "sourceMap": true,
-    "outDir": "dist/types",
-    "isolatedModules": true,
-    "esModuleInterop": true,
     "strict": true,
+    "outDir": "dist/types",
+    "sourceMap": true,
+    "esModuleInterop": true,
+    "isolatedModules": true,
     "skipLibCheck": true
   },
   "references": [

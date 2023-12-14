@@ -2,7 +2,6 @@
 
 ![Vue Typescript Bundle Template](https://github.com/productdevbookcom/assets/blob/main/vue-ts-bundle-template.jpg?raw=true)
 
-
 This is a template for creating a Typescript bundle. It is based on the [Typescript](https://www.typescriptlang.org/) compiler with the [Vite](https://vitejs.dev/) bundler.
 
 ## Features
@@ -18,7 +17,6 @@ This is a template for creating a Typescript bundle. It is based on the [Typescr
 - [x] [GitHub Actions]()
 - [x] [NPM Local Registry]()
 - [x] [Renovate]()
-
 
 ## Usage
 
@@ -39,14 +37,13 @@ This is a template for creating a Typescript bundle. It is based on the [Typescr
 
 [Setup Github App](https://github.com/apps/renovate) for Renovate.
 
-
 # Checklists
 
 - Update the `README.md` file.
 - Update the `LICENSE` file.
 - Update the `package.json` file. (name,version, description, author, repository, bugs, homepage, funding, keywords)
 - playground/src/App.vue - update package name `vue-bundle-template`
-- playground/package.json - in change the package name `vue-bundle-template` 
+- playground/package.json - in change the package name `vue-bundle-template`
 
 ## Sponsors
 
@@ -55,7 +52,6 @@ This is a template for creating a Typescript bundle. It is based on the [Typescr
     <img alt="sponsors" src='https://cdn.jsdelivr.net/gh/oku-ui/static/sponsors/sponsors.svg'/>
   </a>
 </p>
-
 
 ## License
 

@@ -48,9 +48,9 @@
     "vue": ">=3.3.0"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "2.4.5",
+    "@antfu/eslint-config": "2.6.1",
     "@types/node": "^20.10.6",
-    "@vitejs/plugin-vue": "^4.6.2",
+    "@vitejs/plugin-vue": "^5.0.2",
     "@vitest/coverage-v8": "^1.1.1",
     "@vue-macros/volar": "^0.18.8",
     "@vue/test-utils": "^2.4.3",

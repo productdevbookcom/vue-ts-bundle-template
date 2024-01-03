@@ -67,8 +67,8 @@ importers:
         version: 3.4.3(typescript@5.3.3)
     devDependencies:
       '@vitejs/plugin-vue':
-        specifier: ^4.6.2
-        version: 4.6.2(vite@5.0.10)(vue@3.4.3)
+        specifier: ^5.0.2
+        version: 5.0.2(vite@5.0.10)(vue@3.4.3)
       typescript:
         specifier: ^5.3.3
         version: 5.3.3
